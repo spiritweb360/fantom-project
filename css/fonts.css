@@ -1,0 +1,20 @@
+@font-face{
+  font-family: 'dudek';
+  src: url('../fonts/Dudek-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'dudek';
+  src: url('../fonts/Dudek-Medium.otf') format('opentype');;
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'dudek';
+  src: url('../fonts/Dudek-Light.otf') format('opentype');;
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'dudek';
+  src: url('../fonts/Dudek-Bold.otf') format('opentype');;
+  font-weight: 700;
+}

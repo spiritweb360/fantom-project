@@ -13,12 +13,13 @@
   text-decoration: none;
   font-family: var(--d);
   font-weight: 400;
+  list-style: none;
 }
 body{
   background: #ececec;
 }
 .container{
-  max-width: 1320px;
+  max-width: 1650px;
   width: 100%;
   /* border: 1px solid red; */
   padding: 0 15px;
@@ -199,7 +200,111 @@ body{
 .header-content h2{
   order: 1;
 }
+/* with us */
+.with-us{
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+  margin: 114px 0;
+  padding: 153px 0;
+}
+.with-us__dot{
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.with-us__content{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 80px;
+  
+}
+.with-us__content--img{
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px 0;
+}
+.with-us__content--info{
+  width: 60%;
+}
+.with-us__content--info h3{
+  font-size: 45px;
+  line-height: 63px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.with-us__content--info h2{
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.with-us__content--list li{
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+.with-us__content--list li:last-of-type{
+  margin: 0;
+}
+.with-us__content--list h5{
+  padding-left: 50px;
+  width: 40%;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.with-us__content--list h5::before{
+  width: 10px;
+  height: 10px;
+  content: '';
+  position: absolute;
+  left: 20px;
+  border-radius: 10px;
+  background: #000000;
+}
+.with-us__content--list p{
+  width: 60%;
+  font-size: 22px;
+  line-height: 31px;
+}
 
+
+@media (max-width: 1600px){
+  .with-us{
+    padding: 50px 0;
+  }
+  .with-us__content--list li{
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    gap: 15px
+  }
+  .with-us__content{
+    gap: 30px;
+  }
+  .with-us__content--info h3{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .with-us__content--info h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  
+}
 @media (max-width: 1400px){
   .header-bg{
     width: 70%;
@@ -210,6 +315,16 @@ body{
   }
   .header-content p{
     width: 30%;
+  }
+  .with-us__content--img{
+    height: auto;
+  }
+  .with-us__content--list h5{
+    font-size: 22px;
+    width: 35%;
+  }
+  .with-us__content--list p{
+    font-size: 18px;
   }
 }
 @media (max-width: 1200px){
@@ -234,6 +349,21 @@ body{
   .header-content h2{
     font-size: 50px;
     line-height: 50px;
+  }
+  .with-us__content--info,
+  .with-us__content--img{
+    width: 50%;
+  }
+  .with-us__content--list li{
+    flex-direction: column;
+  }
+  .with-us__content--list h5{
+    font-size: 20px;
+    width: 100%;
+  }
+  .with-us__content--list p{
+    font-size: 16px;
+    width: 100%;
   }
 }
 @media (max-width: 992px){
@@ -294,6 +424,48 @@ body{
     font-size: 25px;
     line-height: 35px;
   }
+  .with-us__content{
+    flex-direction: column;
+  }
+  .with-us__content--list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .with-us__content--list li{
+    width: 45%;
+  }
+  .with-us__content--list li:last-of-type{
+    margin-bottom: 20px;
+  }
+  .with-us__content--info,
+  .with-us__content--img{
+    width: 100%;
+  }
+  .with-us__content--info{
+    text-align: center;
+  }
+  .with-us__content--img{
+    height: 400px;
+  }
+  .with-us__content--list h5{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* flex-direction: column; */
+  }
+  .with-us__content--list h5::before{
+    position: relative;
+    left: -20px;
+  }
+  .with-us__dot{
+    width: 100%;
+    height: 400px;
+    left: -20px
+  }
+  .with-us{
+    margin: 40px 0;
+  }
 }
 @media (max-width: 576px){
   .header-content{
@@ -312,6 +484,17 @@ body{
   .header-content h2{
     font-size: 20px;
     line-height: 28px;
+  }
+  .with-us__content--list li{
+    width: 100%;
+  }
+  .with-us__content--info h3{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .with-us__content--info h2{
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media (max-width: 480px){

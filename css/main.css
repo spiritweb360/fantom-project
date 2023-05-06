@@ -368,6 +368,7 @@ body{
   min-height: 800px;
   position: relative;
   margin: 70px 0 50px;
+  overflow: hidden;
 }
 .portfolio-dot{
   width: 65%;

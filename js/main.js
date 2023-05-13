@@ -27,3 +27,26 @@ menu.addEventListener('click', function(){
     menu.removeAttribute('style')
   }, 400);
 })
+
+var swiper = new Swiper(".reviews-slider__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  spaceBetween: 80,
+  slidesPerView: 1,
+});
+
+var swiper = new Swiper(".blog-slider__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  spaceBetween: 30,
+  breakpoints: {
+    480: {slidesPerView: 1},
+    768: {slidesPerView: 2},
+    1200: {slidesPerView: 3},
+    // 1400: {slidesPerView: 4},
+  }
+});

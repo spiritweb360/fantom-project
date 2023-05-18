@@ -22,7 +22,7 @@ body{
   max-width: 1650px;
   width: 100%;
   /* border: 1px solid red; */
-  padding: 0 15px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 /* navbar */
@@ -380,7 +380,7 @@ body{
 }
 .portfolio-title{
   width: 100%;
-  padding: 30px 0 40px;
+  padding: 30px 25px 40px;
   position: relative;
   z-index: 1;
 }
@@ -564,6 +564,8 @@ body{
   line-height: 64px;
   font-weight: 500;
   text-transform: uppercase;
+  width: max-content;
+  background: #ffffff;
 }
 .blog-slide{
   /* height: 700px; */
@@ -857,7 +859,7 @@ body{
   }
   .portfolio-title,
   .blog-title{
-    padding: 0 15px;
+    padding: 20px 15px 0;
   }
   .portfolio{
     padding-bottom: 50px;
@@ -970,6 +972,9 @@ body{
   .reviews-title,
   .blog-title{
     text-align: center;
+  }
+  .blog-title h2{
+    width: unset;
   }
   .portfolio-gallery{
     grid-template-columns: repeat(2, 1fr);
